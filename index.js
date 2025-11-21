@@ -1,7 +1,7 @@
 // index.js
 
 // Lógica de prefixo para garantir que os links funcionem localmente e no GitHub Pages
-const prefix = window.location.hostname.includes("github.io") ? "/NomeDoSeuRepositorio/" : "";
+const prefix = window.location.hostname.includes("github.io") ? "/minhas redações/" : "";
 
 // Lista de redações (18 exemplos de textos mais longos)
 const redacoes = [
@@ -46,4 +46,5 @@ redacoes.forEach((r, index) => {
 container.appendChild(fragment); // Renderiza todos os cartões de forma eficiente
 
 // SALVAR DADOS NO LOCAL STORAGE: essencial para a redacao.html carregar o conteúdo
+
 localStorage.setItem("redacoes", JSON.stringify(redacoes));
