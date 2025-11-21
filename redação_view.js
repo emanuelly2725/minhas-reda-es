@@ -1,7 +1,7 @@
 // redacao_view.js - Script de visualização para redacao.html
 
 // Lógica de prefixo para garantir que o link de voltar funcione corretamente
-const prefix = window.location.hostname.includes("github.io") ? "/minhas redações/" : "";
+const prefix = window.location.hostname.includes("github.io") ? "minhas-reda-es" : "";
 
 // 1. Ajustar botão/link "Voltar"
 const backLink = document.getElementById("voltar");
@@ -29,3 +29,4 @@ if (!redacoes || redacoes.length === 0 || isNaN(id) || id < 0 || id >= redacoes.
     if (p) p.textContent = redacoes[id].texto; 
 
 }
+
