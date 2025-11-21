@@ -1,0 +1,132 @@
+/* GERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Variáveis CSS para facilitar a alteração de cor no futuro */
+:root {
+    --bg-primary: #1a1a2e; /* Deep Navy */
+    --bg-secondary: #252542; /* Darker Navy para cards e header */
+    --accent-color: #00a8cc; /* Teal Accent (Destaque) */
+    --text-light: #e8e8e8;
+    --shadow-dark: rgba(0, 0, 0, 0.4);
+}
+
+body {
+    background: var(--bg-primary);
+    color: var(--text-light);
+}
+
+/* CABEÇALHO */
+header {
+    text-align: center;
+    padding: 40px 20px;
+    background: var(--bg-secondary);
+    border-bottom: 2px solid var(--accent-color);
+}
+
+header h1 {
+    font-size: 2.8rem;
+    margin-bottom: 5px;
+    color: var(--accent-color);
+}
+
+header p {
+    color: var(--text-light);
+    opacity: 0.8;
+}
+
+/* LAYOUT GRID */
+.container {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+    gap: 30px; 
+}
+
+/* CARTÕES */
+.card {
+    background: var(--bg-secondary);
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px var(--shadow-dark);
+    transition: 0.3s ease;
+    cursor: pointer;
+    text-decoration: none; 
+    color: var(--text-light); 
+    border-left: 5px solid var(--accent-color); 
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px var(--shadow-dark);
+    background: #303050; 
+}
+
+.card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 8px;
+    color: var(--accent-color);
+}
+
+.card p {
+    opacity: 0.7;
+    font-size: 0.9rem;
+}
+
+/* RODAPÉ */
+footer {
+    text-align: center;
+    padding: 25px;
+    margin-top: 50px;
+    background: #101020; 
+    color: var(--text-light);
+    font-size: 0.8rem;
+    border-top: 1px solid #333;
+}
+
+/* PÁGINA DE REDAÇÃO (redacao.html) */
+.pagina-redacao {
+    max-width: 900px;
+    padding: 40px;
+    margin: 40px auto;
+    background: var(--bg-secondary);
+    border-radius: 8px;
+    box-shadow: 0 5px 15px var(--shadow-dark);
+}
+
+.pagina-redacao h1 {
+    font-size: 2.2rem;
+    margin-bottom: 25px;
+    color: var(--accent-color);
+    border-bottom: 1px dashed #333;
+    padding-bottom: 10px;
+}
+
+.pagina-redacao p {
+    line-height: 1.8;
+    white-space: pre-line;
+    color: var(--text-light);
+    font-size: 1rem;
+}
+
+.voltar {
+    text-decoration: none;
+    color: var(--accent-color);
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 20px;
+    transition: 0.2s;
+}
+
+.voltar:hover {
+    color: #4ed9ff; 
+}
